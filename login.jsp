@@ -39,8 +39,8 @@ html, body {
 	<p><%=id%>님 환영합니다.
 	</p>
 	<a href="logout.jsp">로그아웃</a>
-	<a href="list.jsp">회원 탈퇴</a>
-	<a href="list.jsp">회원 수정</a>
+	<a href="modify.jsp?id=<%=id%>">회원 수정</a>
+	<a href="delete.jsp?id=<%=id%>">회원 탈퇴</a>
 
 	
 	<%

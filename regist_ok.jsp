@@ -52,16 +52,13 @@
 	pstmt.setString(9, addr2);
 	pstmt.setString(10, profile);
 	pstmt.executeUpdate();
-	
-	
 
 	if (pstmt != null)
 		pstmt.close();
 	if (conn != null)
 		conn.close();
-	
 	%>
-	
+
 
 	<%
 	response.sendRedirect("login.jsp");
