@@ -1,0 +1,201 @@
+            * {
+                box-sizing: border-box;
+                font-family: 'Cafe24SsurroundAir';
+            }
+            
+            @font-face {
+                font-family: 'Cafe24SsurroundAir';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            /* grid */
+            
+            body {
+                font-family: 'Cafe24SsurroundAir';
+                margin: 0;
+                background: #E99;
+                padding: 0;
+            }
+            
+            .bg {
+                width: 100%;
+                height: 100vh;
+                background: #E34;
+                transition: ease-out 1s;
+            }
+            
+            .titletext {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                color: white;
+                font-size: 3rem;
+                transform: translateY(10vh);
+                transition: transform 0.5s ease-in;
+            }
+            
+            .container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                border-radius: 1%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                height: 60vh;
+                max-height: 1440px;
+                box-shadow: -100px 140px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+            }
+            
+            form div {
+                position: relative;
+                overflow: hidden;
+            }
+            /* input */
+            
+            form input {
+                height: 5vh;
+            }
+            
+            input,
+            textarea {
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                background: none;
+                position: relative;
+                font-size: 1.4em;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                padding: 10px 15px;
+                outline: 0;
+            }
+            
+            input:hover {
+                cursor: pointer;
+            }
+            
+            .input2 input {
+                width: 50%;
+                float: left;
+            }
+            /* valid -> 값이 입력되었을때 사용하는 가상클래스 */
+            
+            form input:valid,
+            form textarea:valid {
+                background: rgba(255, 255, 255, 0.95);
+            }
+            
+            form textarea:invalid {
+                background-color: red;
+            }
+            
+            form input:focus,
+            form textarea:focus {
+                border-color: rgba(0, 0, 0, 0.8);
+            }
+            
+            form input:focus+label,
+            form textarea:focus+label {
+                background: rgba(0, 0, 0, 0.8);
+                color: white;
+                font-size: 80%;
+                padding: 1px 6px;
+                z-index: 2;
+            }
+            
+            #input2 {
+                position: relative;
+            }
+            
+            form label {
+                transition: background 0.5s, color 0.5s, top 0.5s, bottom 0.5s, right 0.5s, left 0.5s;
+                position: absolute;
+                color: #FFF;
+                padding: 7px 6px;
+            }
+            
+            .content {
+                height: 40vh;
+            }
+            
+            form textarea {
+                display: inline-block;
+                resize: none;
+                overflow-y: scroll;
+                height: 100%;
+                padding: 100px;
+            }
+            /* 버튼*/
+            
+            .write_btn {
+                float: left;
+                width: 50%;
+                font-size: 1rem;
+                background-color: #FFFFFF03;
+                height: 5vh;
+                border: 0;
+                border-radius: 5%;
+                color: #FFF;
+                border-radius: 0;
+            }
+            
+            .write_btn:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+                transition: ease-in 1s;
+            }
+            /* 플로팅 텍스트*/
+            
+            form.write_form input,
+            form.write_form textarea {
+                padding: 12px 12px 12px 12px;
+            }
+            
+            form.write_form label {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+            }
+            
+            #input1 #label-left {
+                width: 100%;
+            }
+            
+            form.write_form input:focus,
+            {
+                padding: 4px 6px 20px 6px;
+            }
+            
+            form.write_form textarea:focus {
+                padding: 60px;
+            }
+            
+            form.write_form input:focus+label,
+            form.write_form textarea:focus+label {
+                top: 100%;
+                margin-top: -16px;
+            }
+            
+            #label-right {
+                left: 50%;
+            }
+            /* 스크롤바 */
+            
+             ::-ms-thumb {}
+            
+             ::-webkit-scrollbar {
+                width: 20px;
+                background: #e64240;
+            }
+            
+             ::-webkit-scrollbar-thumb {
+                background: orange;
+                border-radius: 10px;
+            }
+            
+             ::-webkit-scrollbar-thumb:hover {
+                background: red;
+            }
