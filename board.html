@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="res/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+</body>
+<div class="bg">
+    <div class="titletext"><span>글쓰기</span></div>
+    <div class="container">
+        <form action="write_ok.jsp" method="POST" name="wirte" class="write_form" autocomplete="off">
+
+            <div id="input1">
+                <input type="text" name="subject" id="subject" required>
+                <label for="subject" id="label-left">
+                    제목을 입력하세요.
+                </label>
+            </div>
+
+            <div class="input2">
+                <input type="text" name="name" id="name" required>
+                <label for="name" id="label-left">
+                    이름
+                </label>
+                <input type="text" name="email" id="email" required>
+                <label for="email" id="label-right">
+                    이메일
+                </label>
+            </div>
+
+            <div id="input1" class="content">
+                <textarea name="content" id="content" placeholder="내용을 입력하세요"></textarea>
+                <label for="content" id="label-left">
+                    내용을 입력하세요.
+                </label>
+            </div>
+
+            <div id="input1">
+                <input type="password" name="passwd" id="passwd" required>
+                <label for="passwd" id="label-left">
+                    비밀번호를 입력하세요.
+                </label>
+
+            </div>
+            <div class="input2">
+                <button type="submit" id="complete" class="write_btn">글쓰기</button>
+                <a href="list.jsp"><button type="button" class="write_btn">목록</button></a>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+</html>
